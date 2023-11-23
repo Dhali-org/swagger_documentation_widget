@@ -76,9 +76,9 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Future&lt;String&gt; loadJson() async {
-  final s = await rootBundle.loadString(&#39;example-openapi-spec.json&#39;);
+  final s = await rootBundle.loadString(&#39;assets&#47;example-openapi-spec.json&#39;);
   print(&quot;JSON: $s&quot;);
-  return await rootBundle.loadString(&#39;example-openapi-spec.json&#39;);
+  return await rootBundle.loadString(&#39;assets&#47;example-openapi-spec.json&#39;);
 }</code></pre>
 </section>
 
