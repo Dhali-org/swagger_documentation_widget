@@ -1,4 +1,9 @@
+[![pr-preview](https://github.com/Dhali-org/swagger_documentation_widget/actions/workflows/firebase-hosting-pull-request.yml/badge.svg)](https://github.com/Dhali-org/swagger_documentation_widget/actions/workflows/firebase-hosting-pull-request.yml)[![documentation](https://github.com/Dhali-org/swagger_documentation_widget/actions/workflows/generate-documentation.yml/badge.svg)](https://github.com/Dhali-org/swagger_documentation_widget/actions/workflows/generate-documentation.yml)[![lint](https://github.com/Dhali-org/swagger_documentation_widget/actions/workflows/lint.yml/badge.svg)](https://github.com/Dhali-org/swagger_documentation_widget/actions/workflows/lint.yml)[![tests](https://github.com/Dhali-org/swagger_documentation_widget/actions/workflows/test.yml/badge.svg)](https://github.com/Dhali-org/swagger_documentation_widget/actions/workflows/test.yml)
 # Swagger Documentation Widget
+
+<p align="center">
+  <img src="./assets/images/example.jpg" />
+</p>
 
 A Flutter widget for displaying Swagger/OpenAPI documentation within your app. This widget enables the integration of interactive API documentation using Swagger UI in a Flutter application. It does not require an active endpoint, all you need is a static json file containing your openAPI specification.
 
@@ -24,6 +29,8 @@ SwaggerDocumentationWidget(
   // Other optional parameters
 )
 ```
+
+You can view full class documentation [here](https://dhali-org.github.io/swagger_documentation_widget/).
 
 ## Additional Information
 For more detailed usage, examples, and customization, refer to the `/lib/main.dart'` example in this package. If you encounter any issues or have feature requests, please file them in the project's issue tracker. Contributions to the package are welcome!

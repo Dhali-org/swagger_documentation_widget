@@ -14,7 +14,7 @@ void main() {
 
     // Build the SwaggerDocumentationWidget
     await tester.pumpWidget(
-      MaterialApp(
+      const MaterialApp(
         home: SwaggerDocumentationWidget(
           jsonContent: jsonContent,
           title: title,
