@@ -86,7 +86,6 @@ class SwaggerDocumentationWidget extends StatefulWidget {
 class _SwaggerDocumentationState extends State<SwaggerDocumentationWidget> {
   final String viewType = 'iframeElement';
   static bool viewTypeIsRegistered = false;
-  final String _jsonContent = '';
 
   @override
   void initState() {
@@ -147,6 +146,7 @@ class _SwaggerDocumentationState extends State<SwaggerDocumentationWidget> {
 
     // Make sure to call registerViewFactory only once
     if (!viewTypeIsRegistered) {
+      // ignore: undefined_prefixed_name
       ui.platformViewRegistry.registerViewFactory(viewType, (int viewId) {
         final iframe = html.IFrameElement()
           ..src =

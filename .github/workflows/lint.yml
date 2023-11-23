@@ -34,3 +34,18 @@ jobs:
         if [[ ! "$OUTPUT" == *"Nothing to fix!"* ]]; then
           exit 1
         fi
+
+  dart-publish-dry-run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: subosito/flutter-action@v2
+      with:
+        channel: 'master'
+        flutter-version: '3.17.0-5.0.pre.65'
+    - name: Install dependencies
+      run: flutter pub get
+    - name: Try a publish dry run
+      id: dart-publish-dry-run
+      run: |
+        dart pub publish --dry-run
