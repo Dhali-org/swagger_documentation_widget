@@ -86,7 +86,6 @@ class SwaggerDocumentationWidget extends StatefulWidget {
 class _SwaggerDocumentationState extends State<SwaggerDocumentationWidget> {
   final String viewType = 'iframeElement';
   static bool viewTypeIsRegistered = false;
-  final String _jsonContent = '';
 
   @override
   void initState() {
