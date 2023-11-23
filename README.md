@@ -30,6 +30,8 @@ SwaggerDocumentationWidget(
 )
 ```
 
+You can view full class documentation [here](https://dhali-org.github.io/swagger_documentation_widget/).
+
 ## Additional Information
 For more detailed usage, examples, and customization, refer to the `/lib/main.dart'` example in this package. If you encounter any issues or have feature requests, please file them in the project's issue tracker. Contributions to the package are welcome!
 
