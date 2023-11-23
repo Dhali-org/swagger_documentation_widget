@@ -146,6 +146,7 @@ class _SwaggerDocumentationState extends State<SwaggerDocumentationWidget> {
 
     // Make sure to call registerViewFactory only once
     if (!viewTypeIsRegistered) {
+      // ignore: undefined_prefixed_name
       ui.platformViewRegistry.registerViewFactory(viewType, (int viewId) {
         final iframe = html.IFrameElement()
           ..src =
