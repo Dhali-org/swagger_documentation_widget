@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:swagger_documentation_widget/swagger_documentation_widget.dart'; // Correct path
 
+/// @nodoc
 void main() {
   runApp(const MyApp());
 }
 
+/// @nodoc
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
