@@ -2,8 +2,9 @@
 # Swagger Documentation Widget
 
 <p align="center">
-  <img src="./assets/images/example.jpg" />
+  <img src="https://raw.githubusercontent.com/Dhali-org/swagger_documentation_widget/develop/assets/images/example.jpg" />
 </p>
+
 
 A Flutter widget for displaying Swagger/OpenAPI documentation within your app. This widget enables the integration of interactive API documentation using Swagger UI in a Flutter application. It does not require an active endpoint, all you need is a static json file containing your openAPI specification.
 
