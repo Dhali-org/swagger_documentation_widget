@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:swagger_documentation_widget/swagger_documentation_widget.dart'; // Correct path
 
+/// @nodoc
 void main() {
   runApp(const MyApp());
 }
 
+/// @nodoc
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   Future<String> loadJson() async {
-    final s = await rootBundle.loadString('example-openapi-spec.json');
+    final s = await rootBundle.loadString('assets/example-openapi-spec.json');
     print("JSON: $s");
-    return await rootBundle.loadString('example-openapi-spec.json');
+    return await rootBundle.loadString('assets/example-openapi-spec.json');
   }
 
   @override
