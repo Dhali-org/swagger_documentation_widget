@@ -1,7 +1,7 @@
 library swagger_documentation_widget;
 
 import 'dart:html' as html;
-import 'dart:ui' as ui;
+import 'dart:ui_web' as ui;
 
 import 'package:flutter/material.dart';
 
@@ -146,7 +146,6 @@ class _SwaggerDocumentationState extends State<SwaggerDocumentationWidget> {
 
     // Make sure to call registerViewFactory only once
     if (!viewTypeIsRegistered) {
-      // ignore: undefined_prefixed_name
       ui.platformViewRegistry.registerViewFactory(viewType, (int viewId) {
         final iframe = html.IFrameElement()
           ..src =
