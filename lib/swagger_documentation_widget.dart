@@ -116,9 +116,8 @@ class _SwaggerDocumentationState extends State<SwaggerDocumentationWidget> {
 
 </head>
 <body>
-<body>
   <div id="swagger-ui"></div>
-  <script src="https://unpkg.com/swagger-ui-dist@4.5.0/swagger-ui-bundle.js" crossorigin></script>
+  <script src="https://unpkg.com/swagger-ui-dist@5.3.0/swagger-ui-bundle.js" crossorigin></script>
   <script>
     var openApiSpec = ${widget.jsonContent};
     window.onload = () => {
@@ -127,14 +126,13 @@ class _SwaggerDocumentationState extends State<SwaggerDocumentationWidget> {
         spec: openApiSpec,
         docExpansion: '${widget.docExpansion.name}',
         deepLinking: ${widget.deepLink},
-        spec: openApiSpec,
         syntaxHighlight: {
           activate: true,
           theme: '${widget.syntaxHighlightTheme.theme}',
         },
         persistAuthorization: ${widget.persistAuthorization},
         displayOperationId: ${widget.displayOperationId},
-        fliter: ${widget.filter},
+        filter: ${widget.filter},
         showExtensions: ${widget.showExtensions},
         showCommonExtensions: ${widget.showCommonExtensions},
       });
