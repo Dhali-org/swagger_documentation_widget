@@ -1,7 +1,7 @@
 name: swagger_documentation_widget
 description: "A Flutter widget for displaying Swagger/OpenAPI documentation within your app"
-version: 0.0.1
-repository: "https://github.com/Dhali-org/xrpl.dart"
+version: 1.0.0
+repository: "https://github.com/Dhali-org/"
 homepage: "https://dhali-org.github.io/swagger_documentation_widget/"
 
 environment:

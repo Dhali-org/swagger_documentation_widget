@@ -22,9 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Swagger Documentation Test',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Swagger Documentation'),
-        ),
+        appBar: AppBar(title: const Text('Swagger Documentation')),
         body: FutureBuilder<String>(
           future: loadJson(),
           builder: (context, snapshot) {
